@@ -270,7 +270,7 @@ describe('@rdfjs/term-map', () => {
       const term1 = rdf.namedNode('http://example.org/1')
       const termmap = new TermMap([[term0, 0], [term1, 1]])
 
-      const entries = [...termmap.entries()]
+      const entries = [...termmap]
 
       strictEqual(entries.length, 2)
       strictEqual(term0.equals(entries[0][0]), true)
