@@ -109,7 +109,8 @@ describe('@rdfjs/term-map', () => {
       const term1 = rdf.namedNode('http://example.org/1')
       const termmap = new TermMap([[term0, 0], [term1, 1]])
 
-      termmap.forEach(([term, value]) => {
+      termmap.forEach((value, term, map) => {
+        strictEqual(map, termmap)
         data.push({ term, value })
       })
 
