@@ -30,8 +30,8 @@ class TermMap {
   }
 
   forEach (callback, thisArg) {
-    for (const pair of this.entries()) {
-      callback.call(thisArg, pair)
+    for (const entry of this.entries()) {
+      callback.call(thisArg, entry[1], entry[0], this)
     }
   }
 
