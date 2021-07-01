@@ -1,4 +1,4 @@
-const { termToNTriples } = require('@rdfjs/to-ntriples')
+const toNT = require('@rdfjs/to-ntriples')
 
 class TermMap {
   constructor (entries) {
@@ -20,7 +20,7 @@ class TermMap {
   }
 
   delete (term) {
-    return this.index.delete(termToNTriples(term))
+    return this.index.delete(toNT(term))
   }
 
   * entries () {
@@ -36,13 +36,13 @@ class TermMap {
   }
 
   get (term) {
-    const item = this.index.get(termToNTriples(term))
+    const item = this.index.get(toNT(term))
 
     return item && item.value
   }
 
   has (term) {
-    return this.index.has(termToNTriples(term))
+    return this.index.has(toNT(term))
   }
 
   * keys () {
@@ -52,7 +52,7 @@ class TermMap {
   }
 
   set (term, value) {
-    const key = termToNTriples(term)
+    const key = toNT(term)
 
     this.index.set(key, { term, value })
 
