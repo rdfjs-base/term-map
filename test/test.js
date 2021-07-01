@@ -1,7 +1,7 @@
 const { strictEqual } = require('assert')
-const { describe, it } = require('mocha')
 const rdf = require('@rdfjs/data-model')
 const { termToNTriples } = require('@rdfjs/to-ntriples')
+const { describe, it } = require('mocha')
 const TermMap = require('..')
 
 describe('@rdfjs/term-map', () => {
