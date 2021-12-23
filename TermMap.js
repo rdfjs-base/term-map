@@ -1,4 +1,4 @@
-const toNT = require('@rdfjs/to-ntriples')
+import toNT from '@rdfjs/to-ntriples'
 
 class TermMap {
   constructor (entries) {
@@ -70,4 +70,4 @@ class TermMap {
   }
 }
 
-module.exports = TermMap
+export default TermMap
