@@ -10,8 +10,8 @@ The package exports the constructor of the Term-Map.
 New instances can be created just like JavaScript Maps:
 
 ```js
-const rdf = require('@rdfjs/data-model')
-const TermMap = require('@rdfjs/term-map')
+import rdf from '@rdfjs/data-model'
+import TermMap from '@rdfjs/term-map'
 
 const terms = new TermMap([
   [rdf.namedNode('http://example.org/'), { data: 1 }],
