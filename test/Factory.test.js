@@ -1,6 +1,6 @@
 import { strictEqual } from 'assert'
-import DataFactory from '@rdfjs/environment/DataFactory.js'
-import Environment from '@rdfjs/environment/Environment.js'
+import DataFactory from '@rdfjs/data-model/Factory.js'
+import Environment from '@rdfjs/environment'
 import { describe, it } from 'mocha'
 import TermMapFactory from '../Factory.js'
 import TermMap from '../TermMap.js'
