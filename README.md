@@ -1,4 +1,6 @@
 # @rdfjs/term-map
+[![build status](https://img.shields.io/github/actions/workflow/status/rdfjs-base/term-map/test.yaml?branch=master)](https://github.com/rdfjs-base/term-map/actions/workflows/test.yaml)
+[![npm version](https://img.shields.io/npm/v/@rdfjs/term-map.svg)](https://www.npmjs.com/package/@rdfjs/term-map)
 
 A Map for RDF/JS Terms keys.
 
