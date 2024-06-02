@@ -1,6 +1,6 @@
 {
   "name": "@rdfjs/term-map",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Map for RDF/JS Terms keys",
   "type": "module",
   "main": "TermMap.js",
